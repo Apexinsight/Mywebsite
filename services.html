@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | Blessed Designs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+const menuToggle = document.getElementById('mobile-menu');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+</script>
+
+  <header>
+    <h1>Blessed Designs</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="content">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Web Design & Development</h3>
+        <p>Modern, responsive websites that reflect your brand and deliver results.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Graphic Design</h3>
+        <p>Logos, posters, social media content, and visual branding that stands out.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>ICT Solutions</h3>
+        <p>Professional IT support, networking, and systems setup for growing businesses.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Blessed Designs | Crafted by Blessed Ben</p>
+  </footer>
+</body>
+</html>

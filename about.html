@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body></body>
+    <script>
+const menuToggle = document.getElementById('mobile-menu');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+</script>
+
+<header>
+  <div class="logo">
+    <img src="images/logo.png" alt="Blessed & Bold Designs Logo">
+    <h1>Blessed & Bold Designs</h1>
+  </div>
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+
+  <section class="content">
+    <h2>About Us</h2>
+    <p>
+      Blessed Designs is a creative studio founded by <strong>Blessed Ben</strong> — a passionate developer, designer, and ICT professional.
+      We specialize in turning ideas into digital masterpieces through web design, branding, and smart tech solutions.
+    </p>
+    <p>
+      Our mission is simple: to empower businesses and individuals with beautiful, functional, and affordable digital designs.
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Blessed Designs | Crafted by Blessed Ben</p>
+  </footer>
+</body>
+</html>
