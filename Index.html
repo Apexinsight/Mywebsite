@@ -4,27 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blessed Designs</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <script>
-const menuToggle = document.getElementById('mobile-menu');
-const navLinks = document.querySelector('.nav-links');
-
-menuToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-});
-</script>
-
   <header>
   <div class="header-container">
-    <a href="index.html" class="logo-link">
-      <img src="logo.png" alt="Blessed Designs logo" class="logo">
+    <a href="./index.html" class="logo-link">
+      <img src="./logo.png" alt="Blessed Designs logo" class="logo">
     </a>
     <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
+      <a href="./index.html">Home</a>
+      <a href="./portfolio.html">Portfolio</a>
+      <a href="./contact.html">Contact</a>
     </nav>
     <div class="menu-toggle" id="mobile-menu">
       <span></span>
@@ -34,13 +25,11 @@ menuToggle.addEventListener('click', () => {
   </div>
 </header>
 
-
-
   <main class="home-content">
     <section>
       <h2>Creative & Futuristic Design Solutions</h2>
       <p>Your mind. Your journey. Your designs, all in one place.</p>
-      <a href="portfolio.html" class="btn">See My Work</a>
+      <a href="./portfolio.html" class="btn">See My Work</a>
     </section>
 
     <section class="features">
@@ -62,5 +51,16 @@ menuToggle.addEventListener('click', () => {
   <footer>
     <p>&copy; 2025 Blessed Designs. All rights reserved.</p>
   </footer>
+
+  <script>
+const menuToggle = document.getElementById('mobile-menu');
+const navLinks = document.querySelector('.nav-links');
+
+if (menuToggle) {
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+}
+  </script>
 </body>
 </html>
